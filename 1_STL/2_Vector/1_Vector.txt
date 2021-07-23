@@ -1,0 +1,74 @@
+Vectors in C++ are sequence containers representing arrays that can change in size. 
+They use contiguous storage locations for their elements, which means that their elements can also be accessed using offsets on regular pointers to its elements, 
+and just as efficiently as in arrays. Following Pointers will be covered in this article:
+
+
+What is Vector in C++?
+Vectors in C++ are the dynamic arrays that are used to store data. Unlike arrays, which are used to store sequential data and are static in nature,
+ Vectors provide more flexibility to the program. Vectors can resize itself automatically when an element is inserted or
+deleted depending on the need of the task to be executed. It is not the same in an array where only a given number of values can be stored under a single variable name.
+
+
+Is vector ordered in C++?
+No vectors are not ordered in C++. Vector elements are placed in adjacent storage so that they can be accessed and travel across using iterators.
+ In vectors, data is inserted at the end of it. Inserting an element at the end takes differential time, as sometimes there may be a need of extending the vector.
+ Removing the last element takes only constant time because no resizing occurs. Inserting and erasing at the beginning or in the middle of the vector is linear in time.
+
+How are vectors stored in C++?
+To create a vector, you need to follow the below given syntax.
+
+Syntax:
+
+vector< object_type > variable_name;
+
+#include <vector>
+int main()
+{
+    std::vector<int> my_vector;
+}
+In the above example, a blank vector is being created. Vector is a dynamic array and, doesn’t needs size declaration.
+
+Member Functions of Vectors in C++
+A Vector container in STL provides us with various useful functions.
+Modifiers
+Iterators
+Capacity
+
+Modifiers:
+push_back(): The function pushes the elements into a vector from the back. If the type of object passed as a parameter in the push_back() is not same as that of the vector an exception is thrown.
+assign(): It assigns a new value to the vector elements by replacing old ones.
+pop_back(): The pop_back() function is used to pop or remove elements from a vector from the back. It reduces the size of the vector by one element.
+insert(): This function inserts new elements before the element before the position pointed by the iterator. We can also pass a third argument count, that counts the number of times the element is to be inserted before the pointed position.
+erase(): erase() function is used to remove elements from a container from the sp.
+ecified position or range. We can either pass the position of the specific elements needs need to remove or we can pass the starting point and endpoint of a range of elements. 
+swap(): swap() function is used to swap the contents of one vector with another vector of the same type. Sizes may differ.
+clear(): clear() function is used to remove all the elements of the vector container
+
+Iterators
+
+begin() – Returns an iterator pointing to the first element in the vector
+end() – Returns an iterator pointing to the theoretical element that follows the last element in the vector
+rbegin() – Returns a reverse iterator pointing to the last element in the vector (reverse beginning). It moves from last to first element
+rend() – Returns a reverse iterator pointing to the theoretical element preceding the first element in the vector (considered as reverse end)
+cbegin() – Returns a constant iterator pointing to the first element in the vector.
+cend() – Returns a constant iterator pointing to the theoretical element that follows the last element in the vector.
+crbegin() – Returns a constant reverse iterator pointing to the last element in the vector (reverse beginning). It moves from last to first element
+crend() – Returns a constant reverse iterator pointing to the theoretical element preceding the first element in the vector (considered as reverse end)
+
+Capacity:
+size() – Returns the number of elements in the vector.
+max_size() – Returns the maximum number of elements that the vector can hold.
+capacity() – Returns the size of the storage space currently allocated to the vector expressed as number of elements.
+resize(n) – Resizes the container so that it contains ‘n’ elements.
+empty() – Returns whether the container is empty.
+shrink_to_fit() – Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity.
+reserve() – Requests that the vector capacity be at least enough to contain n elements.
+
+Element access:
+
+reference operator [g] – Returns a reference to the element at position ‘g’ in the vector
+at(g) – Returns a reference to the element at position ‘g’ in the vector
+front() – Returns a reference to the first element in the vector
+back() – Returns a reference to the last element in the vector
+data() – Returns a direct pointer to the memory array used internally by the vector to store its owned elements.
+
