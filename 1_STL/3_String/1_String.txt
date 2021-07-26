@@ -1,0 +1,2 @@
+Open the link in browser then you will get everything about string :
+https://www.geeksforgeeks.org/stdstring-class-in-c/
