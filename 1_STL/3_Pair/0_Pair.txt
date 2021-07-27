@@ -1,0 +1,2 @@
+Read the article to know everything about Pair.
+https://www.geeksforgeeks.org/pair-in-cpp-stl/
