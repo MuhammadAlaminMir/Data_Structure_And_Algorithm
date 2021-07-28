@@ -1,4 +1,4 @@
-Map is very important topic to learn in c++ Std library.
-Here is Some good resources to learn map:
+Map is a very important topic in c++ Std library.
+Here are some good resources to learn map:
 1. https://www.javatpoint.com/post/cpp-map.
 2. https://www.udacity.com/blog/2020/03/c-maps-explained.html
