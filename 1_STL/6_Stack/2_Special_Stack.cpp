@@ -1,6 +1,6 @@
 /* 
     Stack Practice Problem: 2.
-    Problem link: https://www.hackerrank.com/challenges/balanced-brackets/problem
+    Problem link: https://practice.geeksforgeeks.org/problems/special-stack/1?fbclid=IwAR1c17IQu93Lk9KRpyhyIPiPeMW-S4n9TUSk20j4HqOLZVIdtISRd3Lxqxk#
     Solution:
     void push(stack<int>& s, int a){
 	s.push(a);
