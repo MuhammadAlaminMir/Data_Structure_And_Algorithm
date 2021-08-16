@@ -1,3 +1,0 @@
-Queue is a very important topic in c++ Std library.
-Here is a good resource to learn Queue:
-1. https://www.studytonight.com/cpp/stl/stl-container-queue

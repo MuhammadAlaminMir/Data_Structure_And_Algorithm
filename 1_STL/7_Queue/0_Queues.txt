@@ -1,0 +1,14 @@
+Queue is a very important topic in c++ Std library.
+There are three type of Queue in C++ STL.
+
+1. Queue:
+Here is a good resource to learn Queue:
+https://www.studytonight.com/cpp/stl/stl-container-queue
+
+2. Dequeue:
+Hare is a good resource to learn Dequeue:
+https://www.cplusplus.com/reference/deque/deque/
+
+3. Priority Queue:
+Hare is a good resource to learn Priority Queue:
+http://www.cplusplus.com/reference/queue/priority_queue/
