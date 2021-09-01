@@ -1,0 +1,9 @@
+Binary Search is a very important Algorithm.
+Hare is some best resources to learn Binary Search.
+
+1. https://www.topcoder.com/thrive/articles/Binary%20Search
+2. https://www.geeksforgeeks.org/binary-search/
+
+To learn about lower and upper bound try this:
+1. https://medium.com/swlh/binary-search-find-upper-and-lower-bound-3f07867d81fb
+2. https://www.geeksforgeeks.org/implementing-upper_bound-and-lower_bound-in-c/

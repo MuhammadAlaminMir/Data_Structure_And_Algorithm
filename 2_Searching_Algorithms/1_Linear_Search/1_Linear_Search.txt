@@ -1,0 +1,9 @@
+Linear Search is a very Basic Algorithm.
+Hare is some best resources to learn Linear Search.
+
+1. https://www.geeksforgeeks.org/linear-search/
+
+Linear Search is a very Basic Searching Algorithm. 
+Every newbie Learn it at their first stage of learning.
+That's why I think Reading the article would be enough. 
+No need to solve problems dedicated to linear search.
