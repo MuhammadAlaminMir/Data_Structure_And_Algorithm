@@ -1,4 +1,10 @@
 Binary Search is a very important Algorithm.
+I have learned many things in binary search. like:
+1. basic Binary search.
+2. lower_bound and upper_bound.
+3. Integer bisection
+4. Fractional bisection
+
 Hare is some best resources to learn Binary Search.
 
 1. https://www.topcoder.com/thrive/articles/Binary%20Search
