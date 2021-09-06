@@ -1,6 +1,6 @@
 //In the name of ALLAH
 
-/*  Binary Practice Problem: 8.
+/*  Binary Practice Problem: 9.
     Problem link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
     Solution: 
 */
@@ -121,15 +121,15 @@ ostream &operator<<(ostream &os, const map<F, S> &v)
     do                                      \
     {                                       \
         cerr << #args << ' ' << ':' << ' '; \
-        faltu(args);                        \
+        func(args);                         \
     } while (0)
-void faltu()
+void func()
 {
     cerr << endl;
 }
 
 template <typename T>
-void faltu(T a[], int n)
+void func(T a[], int n)
 {
     for (int i = 0; i < n; ++i)
         cerr << a[i] << ' ';
@@ -137,15 +137,15 @@ void faltu(T a[], int n)
 }
 
 template <typename T, typename... hello>
-void faltu(T arg, const hello &...rest)
+void func(T arg, const hello &...rest)
 {
     cerr << arg << ' ';
-    faltu(rest...);
+    func(rest...);
 }
-
-long long getsum(long long n)
+ll a, b, c;
+ll getres(ll mid)
 {
-    return (n * (n + 1)) >> 1;
+    return a * (mid * mid) + b * mid + c;
 }
 
 int main()
@@ -155,29 +155,22 @@ int main()
     cin >> t;
     while (t--)
     {
-        long long y;
-        cin >> y;
-        long long l = 1, r = 1e5, ans = -1;
-        r = min(r, y);
+        ll k;
+        cin >> a >> b >> c >> k;
+        ll l = 0, r = 1e5, ans = 1e5;
         while (l <= r)
         {
-            long long mid = (l + r) / 2;
-
-            if (getsum(mid) == y)
+            ll mid = (l + r) >> 1;
+            if (getres(mid) >= k)
             {
-                ans = mid;
-                break;
-            }
-            else if (getsum(mid) < y)
-                l = mid + 1;
-            else
+                ans = min(mid, ans);
                 r = mid - 1;
+            }
+            else
+                l = mid + 1;
         }
-
-        if (ans == -1)
-            cout << "NAI" << endl;
-        else
-            cout << ans << endl;
+        cout << ans << endl;
     }
+
     return 0;
 }
