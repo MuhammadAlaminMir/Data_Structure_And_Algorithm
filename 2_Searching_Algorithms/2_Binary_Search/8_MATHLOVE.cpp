@@ -1,7 +1,7 @@
 //In the name of ALLAH
 
 /*  Binary Practice Problem: 8.
-    Problem link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+    Problem link: https://www.spoj.com/problems/MATHLOVE/
     Solution: 
 */
 #include <bits/stdc++.h>

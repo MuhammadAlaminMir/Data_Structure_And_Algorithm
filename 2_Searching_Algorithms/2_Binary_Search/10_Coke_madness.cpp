@@ -1,7 +1,7 @@
 //In the name of ALLAH
 
-/*  Binary Practice Problem: 9.
-    Problem link: https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/monks-encounter-with-polynomial/
+/*  Binary Practice Problem: 10.
+    Problem link: https://www.spoj.com/problems/RPLC/
     Solution: 
 */
 #include <bits/stdc++.h>
@@ -142,34 +142,46 @@ void func(T arg, const hello &...rest)
     cerr << arg << ' ';
     func(rest...);
 }
-ll a, b, c;
-ll getres(ll mid)
+const ll mx = 10e6 + 123;
+ll arr[mx];
+ll n;
+int getValue(ll en)
 {
-    return a * (mid * mid) + b * mid + c;
+    for (int i = 0; i < n; i++)
+    {
+        en += arr[i];
+        if (en <= 0)
+            return -1;
+    }
+
+    return 1;
 }
 
 int main()
 {
     optimize();
-    int t;
+    int t, ts = 1;
     cin >> t;
     while (t--)
     {
-        ll k;
-        cin >> a >> b >> c >> k;
-        ll l = 0, r = 1e5, ans = 1e5;
+        cin >> n;
+        for (ll i = 0; i < n; i++)
+            cin >> arr[i];
+        ll l = 1, r = 1e14, ans;
         while (l <= r)
         {
             ll mid = (l + r) >> 1;
-            if (getres(mid) >= k)
+
+            if (getValue(mid) > 0)
             {
-                ans = min(mid, ans);
+                ans = mid;
                 r = mid - 1;
             }
             else
                 l = mid + 1;
         }
-        cout << ans << endl;
+        cout << "Scenario #" << ts << ": " << ans << endl;
+        ts++;
     }
 
     return 0;
