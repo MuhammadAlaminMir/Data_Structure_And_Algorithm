@@ -1,5 +1,10 @@
 //In the name of ALLAH
 
+/*  Binary Practice Problem: 13.
+    Problem link: https://drive.google.com/file/d/1LaA_0J-LsAwyBkdJ9EQbiKPZ-gFrk3bH/view?usp=sharing
+    submit:  https://algo.codemarshal.org/contests/ncpc18/problems/I
+    Solution: 
+*/
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
