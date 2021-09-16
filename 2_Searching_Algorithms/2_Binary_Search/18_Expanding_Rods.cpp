@@ -1,7 +1,7 @@
 //In the name of ALLAH
 
-/*  Binary Practice Problem: 17.
-    Problem link: https://lightoj.com/problem/crossed-ladders
+/*  Binary Practice Problem: 18.
+    Problem link: https://lightoj.com/problem/expanding-rods
     Solution: 
 */
 #include <bits/stdc++.h>
@@ -150,25 +150,27 @@ int main()
     cin >> t;
     for (int tc = 1; tc <= t; tc++)
     {
-        double x, y, c;
+        double L, n, c;
+        cin >> L >> n >> c;
 
-        cin >> x >> y >> c;
+        double L1 = (1 + (n * c)) * L;
 
-        double l = 0, r = min(x, y);
+        double l = 0, r = 1e18;
         for (int i = 0; i < 100; i++)
         {
-            double d = (l + r) / 2.0;
-            double h1 = sqrt((x * x) - (d * d));
-            double h2 = sqrt((y * y) - (d * d));
-
-            double h = ((h1 * h2) / (h1 + h2));
-            if (h < c)
-                r = d;
+            double R = (l + r) / 2;
+            double ans = R * 2.0 * asin(L / (2.0 * R));
+            if (ans < L1)
+            {
+                r = R;
+            }
             else
-                l = d;
+                l = R;
         }
+        double R = l;
+        double h = R - sqrt((R * R) - ((L / 2.0) * (L / 2.0)));
         fraction(10);
-        cout << "Case " << tc << ": " << l << endl;
+        cout << "Case " << tc << ": " << h << endl;
     }
     return 0;
 }
