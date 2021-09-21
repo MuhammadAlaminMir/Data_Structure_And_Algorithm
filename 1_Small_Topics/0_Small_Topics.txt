@@ -1,0 +1,3 @@
+While learning DSA I found some small topics like: PBDS, Sliding Window, Prefix Sum etc.
+In this folder i will try to add some good resource to learn that topic.
+And solve some problem on those topics too. 
