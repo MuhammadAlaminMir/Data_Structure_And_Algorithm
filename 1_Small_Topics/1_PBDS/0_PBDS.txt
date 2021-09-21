@@ -1,0 +1,25 @@
+g++ compiler is a C++ compiler for GNU in Linux.
+
+The g++ compiler also adds support for some special data structures that are not in C++ programming language standard library. 
+These are known as policy-based data structures.
+The policy-based data structures provide the programmer a high-performance, semantic safety and flexibility 
+as compared to the standard data structures of C++ std library.
+
+Hare are some good resource to learn about PBDS:
+1.https://www.youtube.com/watch?v=t9-uFN23HjQ&list=PLoa_roVVsxA1CJu4DsOljb9d7FJkMCynM&index=21&t=2218s
+2.https://www.youtube.com/watch?v=f88s33eFGDo
+
+we have write some extra code when using PBDS:
+
+#include <ext/pb_ds/assoc_container.hpp>
+using namespace __gnu_pbds;
+
+typedef tree< ll, null_type, less_equal<ll>, rb_tree_tag, tree_order_statistics_node_update > ordered_set; 
+/// change ll to any data type
+/// less_equal for multiSet increasing order
+/// less for set increasing order
+/// greater_equal for multiSet decreasing order
+/// greater for set decreasing order
+
+/// couT<<*X.find_by_order(1)<<endL; // iterator to the k-th largest element
+/// couT<<X.order_of_key(-5)<<endL;  // number of items in a set that are strictly smaller than our item
