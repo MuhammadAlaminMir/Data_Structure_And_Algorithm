@@ -1,0 +1,12 @@
+Bit Manipulations Search is a very important Topic for CP.
+
+Hare are some good resources to learn about Bit Manipulations:
+Articles:
+1. https://www.educative.io/courses/bit-manipulation/qANxozg6W5k
+2. https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/
+
+Youtube Videos:
+1. https://www.youtube.com/watch?v=5rtVTYAk9KQ
+2. https://www.youtube.com/playlist?list=PL2q4fbVm1Ik7ip1VkWwe5U_CEb93vw6Iu
+3. https://www.youtube.com/playlist?list=PLfQN-EvRGF39Vz4UO18BtA1ocnUhGkvk5
+
