@@ -1,5 +1,5 @@
-/*  Bit Manipulation Practice Problem: 1.
-    Problem link: https://leetcode.com/problems/number-of-1-bits/
+/*  Bit Manipulation Practice Problem: 2.
+    Problem link: https://leetcode.com/problems/counting-bits/
     Solution:
     class Solution {
 public:
