@@ -1,0 +1,54 @@
+The main goal of number theory is to discover interesting and unexpected relationships between different sorts of 
+numbers and to prove that these relationships are true
+
+Number theory is important for CP. Becurse.. Problems in competitive programming which involve Mathematics are are usually about number theory,
+ or geometry. If you know number theory, that increases your ammo heavily in solving a lot of tougher problems, 
+ and helps you in getting a strong hold on a lot of other problems, too.
+
+ Number theory must learn topics:
+ Basics:
+
+--> GCD and LCM
+--> Factorial
+--> Prime factors
+--> Binomial Coefficient
+--> Catalan numbers
+--> Euclid’s Lemma
+--> Basic and Extended Euclidean algorithms
+--> Integer sequences: Fibonacci, Padovan, OESIS
+--> Modular Arithmetic :
+
+--> Euler’s Totient Function
+--> Euler’s Totient function for all numbers smaller than or equal to n
+--> Modular Exponentiation (Power in Modular Arithmetic)
+--> Find remainder without using modulo operator
+--> Modular multiplicative inverse
+--> Multiplicative order
+--> Compute nCr % p | Set 1 (Introduction and Dynamic Programming Solution)
+--> Compute nCr % p | Set 2 (Lucas Theorem)
+--> Compute nCr % p | Set 3 (Using Fermat Little Theorem)
+--> Chinese Remainder Theorem – Set 1 (Introduction), Set 2 (Inverse Modulo based Implementation)
+--> Find Square Root under Modulo p | Set 1 (When p is in form of 4*i + 3)
+--> Find Square Root under Modulo p | Set 2 (Shanks Tonelli algorithm)
+--> Modular Division
+--> Cyclic Redundancy Check and Modulo-2 Division
+--> Primitive root of a prime number n modulo n
+--> Euler’s criterion (Check if square root under modulo p exists)
+--> Using Chinese Remainder Theorem to Combine Modular equations
+--> Multiply large integers under large modulo
+--> Compute n! under modulo p
+--> Wilson’s Theorem
+--> Number Theory :
+
+--> Primality Test | Set 1 (Introduction and School Method)
+--> Primality Test | Set 2 (Fermat Method)
+--> Primality Test | Set 3 (Miller–Rabin)
+--> Primality Test | Set 4 (Solovay-Strassen)
+--> Legendre’s formula (Given p and n, find the largest x such that p^x divides n!)
+--> Carmichael Numbers
+--> number-theoryGenerators of finite cyclic group under addition
+--> Sum of divisors of factorial of a number
+--> GFact 22 | (2^x + 1 and Prime)
+--> Sieve of Eratosthenes
+--> Goldbach’s Conjecture
+--> Pollard’s Rho Algorithm for Prime Factorization
