@@ -1,3 +1,5 @@
+All Template can be found in hare: https://pastebin.com/u/_Muhammad
+
 The main goal of number theory is to discover interesting and unexpected relationships between different sorts of 
 numbers and to prove that these relationships are true
 
@@ -52,3 +54,4 @@ Number theory is important for CP. Becurse.. Problems in competitive programming
 --> Sieve of Eratosthenes
 --> Goldbach’s Conjecture
 --> Pollard’s Rho Algorithm for Prime Factorization
+
