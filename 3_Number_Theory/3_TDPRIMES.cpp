@@ -1,8 +1,8 @@
 /*
-    First I Used Harmonic Series to create prime Generation in this problem
-    Then I Optimise that algorithm and make it Sieve of Eratosthenes.
-    Problem link: https://vjudge.net/problem/UVA-543
-    solution
+    used sieve of eratosthenes to solve this problem.
+
+    Problem link: https://www.spoj.com/problems/TDPRIMES/
+    solution:
  */
 // In the name of ALLAH
 
@@ -144,82 +144,39 @@ void fanc(T arg, const hello &...rest)
     cerr << arg << ' ';
     fanc(rest...);
 }
-const int mx = 1e6 + 133;
-bool isPrime[mx];
+const int MX = 1e8 + 123;
+bool isPrime[MX];
 vi primes;
 
-// Sieve of Eratosthenes
 void primeGen(int n)
 {
     for (int i = 3; i <= n; i += 2)
         isPrime[i] = 1;
     int sq = sqrt(n);
-
     for (int i = 3; i <= sq; i += 2)
     {
         if (isPrime[i])
         {
-            for (int j = i * i; j <= n; j += (i + i))
+            for (int j = (i * i); j <= n; j += (i + i))
             {
                 isPrime[j] = 0;
             }
         }
     }
-
+    primes.PB(2);
     for (int i = 3; i <= n; i += 2)
     {
         if (isPrime[i])
             primes.PB(i);
     }
 }
-// void primeGen(int n)
-// {
-//     mem(isPrime, 1);
-//     for (int i = 2; i <= n; i++)
-//     {
-//         for (int j = i + i; j <= n; j += i)
-//         {
-//             isPrime[j] = 0;
-//         }
-//     }
-//     isPrime[2] = 0;
-//     for (int i = 3; i <= n; i++)
-//     {
-//         if (isPrime[i])
-//             primes.PB(i);
-//     }
-// }
 int main()
 {
     optimize();
-    primeGen(1e6);
-    int n;
+    int lim = 1e8;
+    primeGen(lim);
 
-    while (cin >> n)
-    {
-        if (n == 0)
-            break;
-        int dif = -1, p1 = -1, p2 = -1;
-        for (auto u : primes)
-        {
-            if (u > n)
-                break;
-            int tp1 = u, tp2 = n - u;
-            if (tp2 > 2 && isPrime[tp2] == 1)
-            {
-                if (abs(tp1 - tp2) > dif)
-                {
-                    dif = abs(tp1 - tp2);
-                    p1 = tp1;
-                    p2 = tp2;
-                }
-            }
-        }
-        if (p1 == -1)
-            cout << "Goldbach's conjecture is wrong." << endl;
-        else
-            cout << n << " = " << p1 << " + " << p2 << endl;
-    }
-
+    for (int i = 0; i < primes.size(); i += 100)
+        cout << primes[i] << endl;
     return 0;
 }
