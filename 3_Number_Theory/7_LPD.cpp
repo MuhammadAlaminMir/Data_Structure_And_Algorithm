@@ -1,6 +1,6 @@
 /*
-    I used Prime Factorization algorithm to solve this problem.
-    Problem link: https://www.spoj.com/problems/HS08PAUL/
+
+    Problem link: https://vjudge.net/problem/UVA-11466
     solution:
  */
 // In the name of ALLAH
@@ -143,12 +143,12 @@ void fanc(T arg, const hello &...rest)
     cerr << arg << ' ';
     fanc(rest...);
 }
-
-const int mx = 1e5 + 123;
+const int mx = 1e7 + 123;
 bitset<mx> isPrime;
 vi primes;
 void primeGen(int n)
 {
+    n += 100;
     for (int i = 3; i <= n; i += 2)
         isPrime[i] = 1;
     int sq = sqrt(n);
@@ -182,9 +182,10 @@ vector<long long> prime_factorization(long long n)
             break;
         if (n % p == 0)
         {
+
+            res.PB(p);
             while (n % p == 0)
             {
-                res.PB(p);
                 n /= p;
             }
         }
@@ -197,26 +198,19 @@ vector<long long> prime_factorization(long long n)
 int main()
 {
     optimize();
-
-    primeGen(1e5);
+    primeGen(1e7);
     ll n;
     while (cin >> n)
     {
         if (n == 0)
             break;
+        n = abs(n);
+        vl res = prime_factorization(n);
 
-        vector<ll> ans = prime_factorization(abs(n));
-
-        if (n < 0)
-        {
-            reverse(ans.begin(), ans.end());
-            ans.PB(-1);
-            reverse(ans.begin(), ans.end());
-        }
-        cout << n << " = " << ans[0];
-        for (int i = 1; i < ans.size(); i++)
-            cout << " x " << ans[i];
-        cout << endl;
+        if (res.size() <= 1)
+            cout << -1 << endl;
+        else
+            cout << res.back() << endl;
     }
 
     return 0;
